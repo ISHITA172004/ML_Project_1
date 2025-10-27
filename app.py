@@ -1,13 +1,16 @@
 import streamlit as st
-import  nltk
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-import  pickle
+import pickle
 import string
-import nltk
-nltk.download('punkt')
+
+# Download necessary NLTK data
+nltk.download('punk')
+nltk.download('punk_tab')  # NEW LINE
 nltk.download('stopwords')
 nltk.download('wordnet')
+
 
 
 ps=PorterStemmer()
