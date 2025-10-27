@@ -4,6 +4,11 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import  pickle
 import string
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 
 ps=PorterStemmer()
 def transform_text(text):
