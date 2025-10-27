@@ -43,7 +43,8 @@ input_sms=st.text_input("Enter the message")
 # 1.Preprocess
 transformed_sms=transform_text(input_sms)
 # 2.Vectorize
-vector_input=tfidf.transform(transformed_sms)
+vector_input = tfidf.transform([transformed_sms])
+
 # 3.Predict
 result=model.predict(vector_input)[0]
 # 4.Display
